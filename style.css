@@ -1,0 +1,438 @@
+/*
+Theme Name: IMHA
+Theme URI:
+Author: Gabriela Suazo
+Author URI: https://gabbysuazo.com
+Description: Custom theme for IMHA (International Mental Health Association)
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Text Domain: IMHA
+*/
+
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #073b4c;
+}
+
+/********************************************************* HEADINGS *********************************************************/
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #06d6a0;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/********************************************************* HEADINGS *********************************************************/
+
+/********************************************************** HEADER **********************************************************/
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #FFD166;
+}
+
+.header-container-mobile {
+    width: 85%;
+    max-width: 1400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.header-content-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.brand-logo-mobile {
+    width: 140px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.desktop-menu .main-menu .menu a {
+    color:  #073b4c;
+    text-decoration: none;
+}
+
+.desktop-menu .main-menu .menu li {
+    list-style-type: none;
+}
+
+/* Mobile Hamburger Menu Icon */
+.dashicons-menu-alt3 {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+}
+
+/****************************************************** HAMBURGER MENU ******************************************************/
+
+.nav-container-mobile button {
+    background: none;
+    border: none;
+}
+ 
+.hamburger{
+    background: none;
+    right:10%;
+    top: 5.8vh;
+    border:0;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+}
+]
+.cross{
+    background: none;
+    position:absolute;
+    right:10%;
+    border:0;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+}
+
+.header-content-mobile .main-menu {
+    width: 100%;
+    overflow-y: hidden;
+    position: absolute;
+    left: 0;
+    top: 145px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #073b4c;
+    border-top: #ffd166 0.5px solid;
+    color: #ffd166;
+}
+
+
+.header-content-mobile .main-menu ul {width: 100%; margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.header-content-mobile .main-menu li {
+    display: block;
+}
+/* .menu li:hover{display: block; color:#CC908C; padding: 20px 0;} */
+
+.header-content-mobile .main-menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #ffd166;
+    padding: 15px 0;
+    border-bottom: #ffd166 0.5px solid;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-content-mobile .main-menu ul li a:hover {  color: #073b4c; text-decoration:none;}
+.header-content-mobile .main-menu a{text-decoration:none; color:#073b4c;}
+.header-content-mobile .main-menu a:hover{text-decoration:none; color:#073b4c;}
+
+/****************************************************** HAMBURGER MENU ******************************************************/
+/********************************************************** HEADER **********************************************************/
+
+.desktop-menu .main-menu {
+    display: none;
+}
+
+/*********************************************************** HERO ***********************************************************/
+
+.home-hero {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.hero-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h2.green-heading {
+    color: #06d6a0 !important;
+}
+
+.hero-content p {
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 1400px;
+}
+
+/*********************************************************** HERO ***********************************************************/
+/******************************************************* HOME - BODY ********************************************************/
+
+.green-heading {
+    color: #06d6a0 !important;
+}
+
+.wp-block-button__link {
+	padding: 8px 16px;
+}
+
+.pink-heading {
+	color: #ef476f;
+}
+
+section.welcome {
+    width: 85%;
+    margin: auto;
+    display: flex;
+		flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.welcome-description p {
+    text-align: justify;
+}
+
+.welcome {
+    max-width: 1400px;
+}
+
+/******************************************************* HOME - BODY ********************************************************/
+/******************************************************* POST CAROUSEL ******************************************************/
+
+.home-carousel div {
+	font-family: 'Rubik' !important;
+	color: #118ab2 !important;
+	font-weight: 500 !important;
+	font-size: 100% !important;
+	font-size: 30px !important;
+}
+
+.home-carousel p {
+	font-family: 'Rubik' !important;
+	font-size: 16px !important;
+	color: #073b4c !important;
+	font-weight: 300 !important;
+	padding: 20px 0 !important;
+}
+
+.home-carousel a div {
+	font-family: 'Rubik' !important;
+	font-size: 18px !important;
+}
+
+.n2-ss-button-container a {
+	display: flex !important;
+	padding: 8px 16px !important;
+	border-color: #118ab2 !important;
+}
+
+.n2-ss-slide-background-image {
+    display: none;
+}
+
+.n2-ss-slide-background-color {
+    background-color: transparent !important;
+}
+
+.home-carousel {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/******************************************************* POST CAROUSEL ******************************************************/
+/********************************************************** FOOTER **********************************************************/
+
+footer .menu {
+	display: block !important;
+}
+
+footer {
+	background-color: #ffd166;
+    text-align: center;
+}
+
+.footer-content {
+    width: 85%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 25px 0;
+}
+
+footer ul {
+	margin-bottom: 0 !important;
+}
+
+footer h5 {
+    font-size: 26px !important;
+}
+
+footer ul {
+    padding: 0 !important;
+}
+
+footer ul li {
+    list-style-type: none !important;
+}
+
+footer ul li a {
+    color: #073b4c;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.middle-footer, .right-footer {
+    font-size: 18px;
+}
+
+.middle-footer li, .right-footer li {
+    margin-bottom: 10px;
+}
+
+.left-footer img {
+    width: 80% !important;
+    height: auto;
+}
+
+.left-footer, .middle-footer, .right-footer {
+    max-height: 305px;
+    margin: 25px 0;
+    margin; auto;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.left-footer p {
+    font-size: 14px;
+}
+
+footer .custom-logo {
+    margin-bottom: 20px;
+}
+
+footer .custom-logo {
+    max-width: 155px;
+}
+
+/********************************************************** FOOTER **********************************************************/
+/******************************************************* MEDIA QUERIES *******************************************************/
+
+@media (min-width: 782px) {
+    .header-content-mobile .main-menu {
+        top: 132px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        max-width: none;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1400px;
+    }
+
+    .left-footer, .middle-footer, .right-footer {
+        width: 33%;
+        max-width: 500px;
+    }
+
+    footer h5 {
+        margin-bottom: 40px;
+    }
+
+    .left-footer {
+        text-align: left;
+    }
+
+    .left-footer p {
+        font-size: 13px;
+    }
+
+    .nav-container-mobile {
+        display: none;
+    }
+
+    .desktop-menu .main-menu {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .desktop-menu .main-menu .menu {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content-mobile {
+        width: 40%;
+    }
+
+    .desktop-menu {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .desktop-menu .main-menu .menu a {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .desktop-menu .main-menu ul {
+        margin-bottom: 0;
+    }
+}
+
+/******************************************************* MEDIA QUERIES *******************************************************/
+
