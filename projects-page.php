@@ -33,46 +33,44 @@ get_header(); ?>
         <?php the_content(); ?>
     </div>
 
-
     <div class="project_main_content">
 
       <div class="project_page_title">
         <?php  echo get_field('project_page_title'); ?>
+        <hr class="">
       </div>
 
       <div id="post_flexbox">
+
         <?php $query = new WP_Query( array( 'category_name' => 'projects' ) );
-              if ( $query->have_posts() ) {
-                while ( $query->have_posts() ) {
-                      $query->the_post();
-                      ?>
+          if ( $query->have_posts() ) {
+            while ( $query->have_posts() ) {
+                    $query->the_post();
+          ?>
 
-                      <div class="individual_post">
-                        <?php the_post_thumbnail('medium'); ?>
+          <div class="individual_post ">
 
-                        <div class="projects_content">
-                        <?php
-                        echo "<h4>" . get_the_title() . "</h4>";
+            <?php the_post_thumbnail('medium'); ?>
 
-                         the_excerpt();
-                         ?>
+              <div class="projects_content">
+                <?php  echo "<h4>" . get_the_title() . "</h4>";
+                                     the_excerpt();
+                 ?>
+                 <a class="red_button" href="<?php the_permalink(); ?>">Learn More</a>
 
-                         <button><a href="<?php the_permalink(); ?>">Learn More</a></button>
+              </div>
 
-                       </div>
-                     </div>
-                       <?php
+            </div>
 
-
-
-                  }
+            <?php
+                }
               }
-              ?>
+            ?>
+
+          </div>
+        </div>
       </div>
-
     </div>
-
-
   </section>
 
 <?php get_footer(); ?>
