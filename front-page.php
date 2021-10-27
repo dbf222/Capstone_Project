@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+/* Template Name: Front-Page */
 
 <div class="home-container">
     <div class="home-hero" <?php if (has_post_thumbnail()) : ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>');" <?php endif; ?>>
