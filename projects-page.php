@@ -37,35 +37,38 @@ get_header(); ?>
 
       <div class="project_page_title">
         <?php  echo get_field('project_page_title'); ?>
-        <hr class="">
+        <hr class="center-diamond">
       </div>
 
       <div id="post_flexbox">
+        <div class="post_flexbox_container">
+          <?php $query = new WP_Query( array( 'category_name' => 'projects' ) );
+            if ( $query->have_posts() ) {
+              while ( $query->have_posts() ) {
+                      $query->the_post();
+            ?>
 
-        <?php $query = new WP_Query( array( 'category_name' => 'projects' ) );
-          if ( $query->have_posts() ) {
-            while ( $query->have_posts() ) {
-                    $query->the_post();
-          ?>
+            <div class="individual_post">
 
-          <div class="individual_post ">
+              <?php the_post_thumbnail('medium'); ?>
 
-            <?php the_post_thumbnail('medium'); ?>
+                <div class="projects_content">
+                  <?php  echo "<h4>" . get_the_title() . "</h4>";
+                                       the_excerpt();
+                   ?>
+                   <a class="red_button" href="<?php the_permalink(); ?>">Learn More</a>
 
-              <div class="projects_content">
-                <?php  echo "<h4>" . get_the_title() . "</h4>";
-                                     the_excerpt();
-                 ?>
-                 <a class="red_button" href="<?php the_permalink(); ?>">Learn More</a>
+                </div>
 
               </div>
 
-            </div>
-
-            <?php
+              <?php
+                  }
                 }
-              }
-            ?>
+              ?>
+        </div>
+
+
 
           </div>
         </div>
