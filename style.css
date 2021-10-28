@@ -552,7 +552,7 @@ footer .custom-logo {
 
 }
 
-@media (max-width: 900px){
+@media (max-width: 1100px){
     #post_flexbox{
       flex-direction: column;
     }
